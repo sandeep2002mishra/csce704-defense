@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual envs
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Models / large artifacts
+*.pickle
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pt
+*.pth
+*.txt.gz
+*.tar
+*.tar.gz
+*.zip
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.eggs/
+*.egg-info/
+dist/
+build/
