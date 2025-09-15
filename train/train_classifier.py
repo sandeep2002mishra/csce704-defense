@@ -284,13 +284,14 @@ class NeedForSpeedModel():
 
 
 train_files = [
-    "ember_2017_2/train_features_0.jsonl",
-    "ember_2017_2/train_features_1.jsonl",
-    "ember_2017_2/train_features_2.jsonl",
-    "ember_2017_2/train_features_3.jsonl",
-    "ember_2017_2/train_features_4.jsonl",
-    "ember_2017_2/train_features_5.jsonl",
-    "ember_2017_2/test_features.jsonl",
+    #"ember_2017_2/smoke_train_balanced.jsonl"
+    #"ember_2017_2/train_features_0.jsonl",
+    #"ember_2017_2/train_features_1.jsonl",
+    #"ember_2017_2/train_features_2.jsonl",
+    #"ember_2017_2/train_features_3.jsonl",
+    #"ember_2017_2/train_features_4.jsonl",
+    #"ember_2017_2/train_features_5.jsonl",
+    #"ember_2017_2/test_features.jsonl",
     "ember2018/train_features_0.jsonl",
     "ember2018/train_features_1.jsonl",
     "ember2018/train_features_2.jsonl",
@@ -302,7 +303,8 @@ train_files = [
 
 
 test_files = [
-    "ember_2017_2/test_features.jsonl",
+    #"ember_2017_2/smoke_test_balanced.jsonl"
+    #"ember_2017_2/test_features.jsonl",
     "ember2018/test_features.jsonl"
 ]
 
@@ -312,6 +314,7 @@ if __name__=='__main__':
     #     clf = pickle.load(open("nfs.pickle", "rb"))
     # except (OSError, IOError) as e:
     # walk in train features
+    train_attributes = []
     for input in train_files:
         
         print("Reading {}...".format(input))
@@ -321,7 +324,7 @@ if __name__=='__main__':
         # read its lines
         sws = file.readlines() 
         
-        train_attributes = []
+        
         # walk in each sw
         for sw in sws: 
             # initialize extractor
@@ -346,8 +349,8 @@ if __name__=='__main__':
     with open('nfs_libraries_functions_nostrings.pickle', 'wb') as f:
         pickle.dump(clf, f)
 
-    exit()
-
+    #exit()
+    train_attributes = []
     # walk in test features
     for input in test_files:
         
