@@ -285,27 +285,27 @@ class NeedForSpeedModel():
 
 train_files = [
     #"ember_2017_2/smoke_train_balanced.jsonl"
-    #"ember_2017_2/train_features_0.jsonl",
-    #"ember_2017_2/train_features_1.jsonl",
-    #"ember_2017_2/train_features_2.jsonl",
-    #"ember_2017_2/train_features_3.jsonl",
-    #"ember_2017_2/train_features_4.jsonl",
-    #"ember_2017_2/train_features_5.jsonl",
-    #"ember_2017_2/test_features.jsonl",
-    "ember2018/train_features_0.jsonl",
-    "ember2018/train_features_1.jsonl",
-    "ember2018/train_features_2.jsonl",
-    "ember2018/train_features_3.jsonl",
-    "ember2018/train_features_4.jsonl",
-    "ember2018/train_features_5.jsonl",
-    "ember2018/test_features.jsonl"
+    "ember_2017_2/train_features_0.jsonl",
+    "ember_2017_2/train_features_1.jsonl",
+    "ember_2017_2/train_features_2.jsonl",
+    "ember_2017_2/train_features_3.jsonl",
+    "ember_2017_2/train_features_4.jsonl",
+    "ember_2017_2/train_features_5.jsonl",
+    "ember_2017_2/test_features.jsonl",
+    #"ember2018/train_features_0.jsonl",
+    #"ember2018/train_features_1.jsonl",
+    #"ember2018/train_features_2.jsonl",
+    #"ember2018/train_features_3.jsonl",
+    #"ember2018/train_features_4.jsonl",
+    #"ember2018/train_features_5.jsonl",
+    #"ember2018/test_features.jsonl"
 ]
 
 
 test_files = [
     #"ember_2017_2/smoke_test_balanced.jsonl"
-    #"ember_2017_2/test_features.jsonl",
-    "ember2018/test_features.jsonl"
+    "ember_2017_2/test_features.jsonl",
+    #"ember2018/test_features.jsonl"
 ]
 
 if __name__=='__main__':
